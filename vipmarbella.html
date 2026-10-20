@@ -1,0 +1,1061 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Heist VIP Service Marbella</title>
+<meta name="description" content="Heist VIP Service Marbella: luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap">
+<style>
+/* Layout: glass sticky header (nav left, crown centre, nav + WhatsApp + EN/DE right); asymmetric hero with a glass crown card; rounded cards and a service grid; contact page ends with a location map card. Black ground, gold only for accents. */
+:root {
+  --ink: #07070a;
+  --ink-2: #0d0d11;
+  --card: #111116;
+  --line: rgba(255,255,255,0.09);
+  --gold: #d4af37;
+  --gold-hi: #f0d77c;
+  --gold-lo: rgba(212,175,55,0.38);
+  --gold-bg: rgba(212,175,55,0.09);
+  --text: #f5f3ee;
+  --muted: #a5a296;
+  --r: 22px;
+  --sans: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  color-scheme: dark;
+  background: var(--ink);
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--ink); color: var(--text); margin: 0; padding: 0;
+  font-family: var(--sans); font-size: 16.5px; line-height: 1.65; font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--ink); }
+a { color: inherit; }
+p { margin: 0; }
+h1, h2, h3 { font-family: var(--sans); font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; margin: 0; text-wrap: balance; }
+em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spacing: 0; }
+:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; }
+.wrap {
+  width: 100%; max-width: 1200px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.gold-text {
+  color: var(--gold);
+  background: linear-gradient(100deg, #b8921f, var(--gold-hi) 45%, var(--gold) 75%, var(--gold-hi));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.tag {
+  display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--gold-lo); background: var(--gold-bg);
+  border-radius: 999px; padding: 7px 15px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-hi);
+}
+.tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px var(--gold); }
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+  border: 1px solid var(--line); border-radius: var(--r);
+}
+
+/* Scroll-triggered reveal effect */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal.delay-1 { transition-delay: 0.1s; }
+.reveal.delay-2 { transition-delay: 0.2s; }
+.reveal.delay-3 { transition-delay: 0.3s; }
+
+/* header */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: rgba(7,7,10,0.82); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.bar { display: flex; flex-wrap: wrap; align-items: center; padding-block: 10px 8px; row-gap: 8px; }
+.links, .acts { display: contents; }
+.bar a.nav {
+  order: 3; flex: 1 1 22%; text-align: center; text-decoration: none; padding: 8px 4px; font-size: 0.82rem; font-weight: 600;
+  color: var(--muted); border-radius: 999px; margin-inline: 2px;
+}
+.bar a.nav:hover { color: var(--text); }
+.bar a.nav[aria-current="page"] { color: var(--gold-hi); background: var(--gold-bg); }
+.brand { order: 1; flex: 1 0 calc(100% - 100px); display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
+.brand svg { width: 40px; height: 27px; flex: none; }
+.brand span { font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; }
+.lang { order: 1; display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; margin-left: auto; background: rgba(255,255,255,0.03); }
+.lang button { font: 700 0.7rem/1 var(--sans); letter-spacing: 0.1em; padding: 8px 12px; background: transparent; color: var(--muted); border: 0; border-radius: 999px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--gold); color: #1a1405; }
+.brk { order: 2; flex-basis: 100%; height: 0; }
+.wa-btn { display: none; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font: 700 0.86rem/1 var(--sans);
+  padding: 16px 26px; border: 1px solid transparent; border-radius: 999px; cursor: pointer; text-align: center; transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-gold { background: linear-gradient(135deg, var(--gold-hi), var(--gold) 55%, #b8921f); color: #1a1405; }
+.btn-light { background: #fff; color: #1a1405; }
+.btn-light:hover { background: #f4eed8; }
+.btn-dark { background: rgba(255,255,255,0.05); color: var(--text); border-color: var(--line); }
+.btn-dark:hover { background: rgba(255,255,255,0.09); border-color: var(--gold-lo); }
+@media (min-width: 980px) {
+  .bar { display: grid; grid-template-columns: auto 1fr auto; column-gap: 28px; align-items: center; padding-block: 0; height: 68px; row-gap: 0; }
+  .links { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+  .acts { display: flex; align-items: center; gap: 10px; }
+  .brk { display: none; }
+  .bar a.nav { order: 0; flex: none; padding: 9px 14px; font-size: 0.86rem; margin-inline: 0; }
+  .brand { order: 0; flex: none; }
+  .brand span { font-size: 1.05rem; }
+  .brand svg { width: 42px; height: 28px; }
+  .lang { order: 0; margin-left: 0; }
+  .wa-btn { display: inline-flex; padding: 12px 20px; font-size: 0.78rem; order: 0; }
+}
+
+/* views */
+.view { animation: fade 0.5s ease both; }
+@keyframes fade { from { opacity: 0.001; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .view { animation: none; } .btn { transition: none; } .reveal { opacity: 1; transform: none; transition: none; } }
+.section { padding-block: clamp(48px, 7vw, 96px); }
+.lead { font-size: 1.14rem; color: #dedacd; max-width: 36em; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.crumbs { display: flex; gap: 8px; font-size: 0.78rem; font-weight: 600; color: #d6d2c4; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--gold-hi); }
+.crumbs span { color: var(--muted); }
+.page-head { position: relative; padding-block: clamp(36px, 6vw, 64px) clamp(32px, 5vw, 56px); }
+.page-head h1 { font-size: clamp(2.5rem, 4.4vw + 1rem, 4.6rem); margin-block: 24px 18px; max-width: 12em; }
+.orb-bg { position: relative; overflow: hidden; }
+.orb-bg::before {
+  content: ""; position: absolute; width: 640px; height: 640px; right: -180px; top: -300px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(212,175,55,0.22), rgba(212,175,55,0) 68%);
+}
+.orb-bg::after {
+  content: ""; position: absolute; width: 420px; height: 420px; left: -200px; bottom: -220px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(212,175,55,0.1), rgba(212,175,55,0) 70%);
+}
+.orb-bg > * { position: relative; z-index: 1; }
+
+/* hero */
+.hero { display: grid; gap: 40px; align-items: center; padding-block: clamp(44px, 7vw, 96px); }
+.hero h1 { font-size: clamp(2.9rem, 5.6vw + 1rem, 5.9rem); margin-block: 22px 22px; letter-spacing: -0.035em; }
+.hero h1 span { display: block; }
+.hero h1 span:last-child { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spacing: 0; }
+.hero-card { padding: 32px 28px; display: grid; gap: 22px; justify-items: start; position: relative; overflow: hidden; }
+.hero-card::before { content: ""; position: absolute; inset: -40% -30% auto auto; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(212,175,55,0.25), rgba(212,175,55,0) 70%); pointer-events: none; }
+.hero-card > * { position: relative; }
+.hero-card svg.crown { width: 92px; height: auto; }
+.hero-card h2 { font-size: 1.5rem; }
+.hero-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; width: 100%; }
+.hero-card li { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.03); font-weight: 500; font-size: 0.96rem; }
+.hero-card li svg { width: 18px; height: 18px; flex: none; }
+@media (min-width: 940px) { .hero { grid-template-columns: 1.35fr 1fr; gap: 64px; } }
+
+/* image placeholder styles */
+.img-placeholder {
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed var(--gold-lo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--muted);
+  text-align: center;
+  padding: 32px 16px;
+  margin-block: 20px;
+}
+.img-placeholder svg {
+  width: 40px;
+  height: 40px;
+}
+.img-placeholder span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* clients feedback styles */
+.feedback-section {
+  padding-block: clamp(48px, 7vw, 96px);
+  background: var(--ink-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.feedback-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 36px;
+}
+@media (min-width: 768px) {
+  .feedback-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .feedback-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.feedback-card {
+  padding: 28px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+.feedback-stars {
+  display: flex;
+  gap: 4px;
+}
+.feedback-stars svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--gold);
+}
+.feedback-card p {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.96rem;
+}
+.feedback-author {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-top: 4px;
+}
+.feedback-author span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* intro + cards */
+.intro { display: grid; gap: 22px; }
+.intro h2 { font-size: clamp(2rem, 2.8vw + 1rem, 3.2rem); }
+.intro .copy { display: grid; gap: 18px; color: var(--muted); max-width: 40em; }
+@media (min-width: 900px) { .intro { grid-template-columns: 1fr 1.3fr; gap: 72px; } }
+.cards3 { display: grid; gap: 16px; padding-bottom: clamp(48px, 7vw, 96px); }
+@media (min-width: 860px) { .cards3 { grid-template-columns: repeat(3, 1fr); } }
+.card { padding: 28px; display: grid; gap: 12px; align-content: start; min-width: 0; transition: border-color 0.2s ease, transform 0.2s ease; }
+.card:hover { border-color: var(--gold-lo); transform: translateY(-2px); }
+.ico { width: 48px; height: 48px; border-radius: 14px; background: var(--gold-bg); border: 1px solid var(--gold-lo); display: grid; place-items: center; margin-bottom: 6px; }
+.ico svg { width: 24px; height: 24px; }
+.card h3, .card h2 { font-size: 1.35rem; color: var(--text); letter-spacing: -0.02em; }
+.card p { color: var(--muted); max-width: 32em; }
+.card ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.card li { display: flex; gap: 12px; align-items: center; padding: 11px 14px; border-radius: 12px; background: rgba(255,255,255,0.035); font-size: 0.96rem; }
+.card li::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+
+/* about */
+.split { display: grid; gap: 36px; align-items: start; }
+.photo { border: 1px solid var(--gold-lo); padding: 8px; border-radius: 28px; background: rgba(255,255,255,0.03); }
+.photo img { display: block; width: 100%; height: auto; border-radius: 20px; }
+.photo-note { margin-top: 10px; font-size: 0.76rem; color: var(--muted); }
+.text-col { display: grid; gap: 18px; min-width: 0; }
+.text-col h2 { font-size: clamp(2rem, 2.8vw + 1rem, 3.2rem); max-width: 10em; }
+.text-col p { color: var(--muted); max-width: 38em; }
+@media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; gap: 64px; } }
+.chips { display: grid; gap: 12px; grid-template-columns: 1fr; padding-bottom: clamp(48px, 7vw, 96px); }
+@media (min-width: 520px) { .chips { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 980px) { .chips { grid-template-columns: repeat(4, 1fr); } }
+.chip { display: flex; gap: 14px; align-items: center; padding: 16px 18px; border-radius: 18px; min-width: 0; }
+.chip i { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--gold-bg); border: 1px solid var(--gold-lo); display: grid; place-items: center; }
+.chip i svg { width: 15px; height: 15px; }
+.chip b { display: block; font-size: 1rem; line-height: 1.2; font-weight: 700; }
+.chip small { display: block; font-size: 0.82rem; color: var(--muted); line-height: 1.35; }
+
+/* services grid */
+.bento { display: grid; gap: 16px; padding-bottom: clamp(40px, 6vw, 72px); }
+@media (min-width: 900px) {
+  .bento { grid-template-columns: repeat(6, 1fr); }
+  .b-tech { grid-column: span 4; } .b-yacht { grid-column: span 2; }
+  .b-conc { grid-column: span 3; } .b-sec { grid-column: span 3; }
+  .b-clear { grid-column: span 6; }
+}
+.note-end { font-size: clamp(1.4rem, 1.8vw + 1rem, 2.1rem); max-width: 28em; line-height: 1.3; font-weight: 600; letter-spacing: -0.02em; padding-bottom: clamp(48px, 7vw, 96px); }
+.values-band { border-block: 1px solid var(--line); background: var(--ink-2); }
+.values-band h2 { font-size: clamp(2rem, 3vw + 1rem, 3.4rem); max-width: 15em; }
+.values { display: grid; gap: 16px; margin-top: 36px; }
+@media (min-width: 820px) { .values { grid-template-columns: repeat(3, 1fr); } }
+.values .card h3 { color: var(--gold-hi); font-size: 1.1rem; }
+
+/* contact */
+.contact-grid { display: grid; gap: 20px; }
+@media (min-width: 900px) { .contact-grid { grid-template-columns: 1.5fr 1fr; gap: 24px; align-items: start; } }
+.form-card { padding: clamp(22px, 3vw, 36px); min-width: 0; }
+form { display: grid; gap: 20px; min-width: 0; }
+.field { display: grid; gap: 8px; min-width: 0; }
+label { font-size: 0.78rem; font-weight: 700; color: var(--gold-hi); letter-spacing: 0.04em; }
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+  width: 100%; font: 400 1rem/1.5 var(--sans); color: var(--text); background: rgba(255,255,255,0.04); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; min-width: 0;
+}
+select option { background: #15151a; color: var(--text); }
+textarea { min-height: 150px; resize: vertical; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { border-color: var(--gold); outline-offset: 0; }
+.two { display: grid; gap: 20px; }
+@media (min-width: 600px) { .two { grid-template-columns: 1fr 1fr; } }
+.check { display: flex; gap: 12px; align-items: flex-start; font-size: 0.9rem; color: var(--muted); letter-spacing: 0; font-weight: 400; }
+.check input { margin-top: 4px; accent-color: var(--gold); flex: none; width: 18px; height: 18px; }
+.result { border: 1px solid var(--gold-lo); background: var(--gold-bg); border-radius: 18px; padding: 22px; display: grid; gap: 14px; margin-top: 22px; }
+.result h2 { font-size: 1.35rem; color: var(--gold-hi); }
+.result p { color: #cfcabb; }
+.result textarea { min-height: 170px; font-size: 0.92rem; }
+.aside { display: grid; gap: 16px; align-content: start; min-width: 0; }
+.aside .card { gap: 8px; }
+.aside address { font-style: normal; color: var(--muted); }
+
+/* map */
+.map-sec { display: grid; gap: 16px; padding-block: 16px clamp(48px, 7vw, 96px); }
+@media (min-width: 900px) { .map-sec { grid-template-columns: 1fr 1.7fr; gap: 24px; } }
+.map-info { padding: clamp(22px, 3vw, 34px); display: grid; gap: 14px; align-content: center; }
+.map-info h2 { font-size: clamp(1.7rem, 2vw + 1rem, 2.4rem); }
+.map-info address { font-style: normal; color: var(--muted); }
+.map-card { position: relative; display: block; border-radius: 26px; overflow: hidden; border: 1px solid var(--line); background: #0c0c10; min-height: 300px; aspect-ratio: 16 / 10; max-width: 100%; }
+.map-card svg { display: block; width: 100%; height: 100%; }
+.map-card:hover { border-color: var(--gold-lo); }
+.map-chip {
+  position: absolute; left: 14px; bottom: 14px; right: 14px; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: space-between;
+  background: rgba(7,7,10,0.78); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid var(--line); border-radius: 16px; padding: 12px 16px; font-size: 0.86rem;
+}
+.map-chip b { font-weight: 700; }
+.map-chip span { color: var(--gold-hi); font-weight: 700; }
+.map-note { font-size: 0.76rem; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .ring { display: none; } }
+
+/* closing band */
+.cta-sec { padding-block: clamp(24px, 5vw, 64px) clamp(40px, 6vw, 80px); }
+.cta-card {
+  position: relative; overflow: hidden; text-align: center; display: grid; justify-items: center; gap: 18px;
+  padding: clamp(40px, 7vw, 84px) clamp(20px, 5vw, 60px); border-radius: 32px; border: 1px solid var(--gold-lo);
+  background: radial-gradient(ellipse 70% 100% at 50% 0%, rgba(212,175,55,0.2), rgba(212,175,55,0) 70%), var(--ink-2);
+}
+.cta-card::after { content: ""; position: absolute; right: -90px; bottom: -120px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,0.03); pointer-events: none; }
+.cta-card > * { position: relative; z-index: 1; }
+.cta-card h2 { font-size: clamp(2.1rem, 3.8vw + 1rem, 4rem); max-width: 11em; }
+.cta-card p { color: #dedacd; font-size: 1.08rem; max-width: 30em; }
+
+/* footer */
+footer { border-top: 1px solid var(--line); background: #050507; }
+.foot { display: grid; gap: 32px; padding-block: 48px 30px; }
+.foot-brand h3 { font-size: 1.3rem; color: var(--gold-hi); margin-bottom: 10px; }
+.foot-brand p { color: var(--muted); max-width: 28em; font-size: 0.94rem; }
+.foot-addr { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; font-size: 0.92rem; color: #d6d2c4; max-width: 28em; }
+.foot-addr svg { flex: none; width: 16px; height: 16px; margin-top: 5px; }
+.foot-nav { display: grid; gap: 10px; align-content: start; }
+.foot-nav a { text-decoration: none; color: #e2decf; font-size: 0.94rem; font-weight: 500; }
+.foot-nav a:hover { color: var(--gold-hi); }
+.foot-tags { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-block: 20px; border-top: 1px solid var(--line); }
+.foot-tags svg { width: 16px; height: 16px; }
+.foot-tags span { border: 1px solid var(--line); border-radius: 999px; padding: 4px 13px; font-size: 0.78rem; color: #d6d2c4; background: rgba(255,255,255,0.03); }
+.copy-line { text-align: center; font-size: 0.8rem; color: var(--muted); padding-block: 18px 96px; border-top: 1px solid var(--line); }
+@media (min-width: 820px) { .foot { grid-template-columns: 1.1fr 1fr; gap: 72px; } }
+
+/* floating whatsapp */
+.wa {
+  position: fixed; z-index: 25; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1a1405; padding: 14px; border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-hi), var(--gold) 55%, #b8921f); box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  font: 700 0.8rem/1 var(--sans);
+}
+.wa svg { width: 26px; height: 26px; flex: none; }
+.wa span { display: none; padding-right: 8px; }
+@media (min-width: 700px) { .wa span { display: inline; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9a7b22"/>
+      <stop offset="0.35" stop-color="#f0d98a"/>
+      <stop offset="0.65" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#f6e7b0"/>
+    </linearGradient>
+    <symbol id="crown" viewBox="0 0 100 68">
+      <path d="M10 54 L6 22 L17 42 L28 16 L39 40 L50 8 L61 40 L72 16 L83 42 L94 22 L90 54 Z" fill="url(#gg)"/>
+      <circle cx="6" cy="19" r="3.4" fill="url(#gg)"/>
+      <circle cx="28" cy="13" r="3.4" fill="url(#gg)"/>
+      <circle cx="50" cy="5" r="3.8" fill="url(#gg)"/>
+      <circle cx="72" cy="13" r="3.4" fill="url(#gg)"/>
+      <circle cx="94" cy="19" r="3.4" fill="url(#gg)"/>
+      <rect x="10" y="57" width="80" height="8" rx="1.5" fill="url(#gg)"/>
+      <circle cx="30" cy="61" r="1.8" fill="#07070a"/>
+      <circle cx="50" cy="61" r="1.8" fill="#07070a"/>
+      <circle cx="70" cy="61" r="1.8" fill="#07070a"/>
+    </symbol>
+    <symbol id="tick" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="pin" viewBox="0 0 16 16"><path d="M8 14.5s4.5-4.2 4.5-7.7a4.5 4.5 0 0 0-9 0c0 3.5 4.5 7.7 4.5 7.7z" fill="none" stroke="#a5a296" stroke-width="1.2" stroke-linejoin="round"/><circle cx="8" cy="6.8" r="1.6" fill="none" stroke="#a5a296" stroke-width="1.2"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-boat" viewBox="0 0 24 24"><path d="M12 3v12M12 4l7 10h-7M12 7L6 14h6M3 17h18l-2.5 4h-13z" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M4 18h16M6 18a6 6 0 0 1 12 0M12 8V6M10 6h4M3 21h18" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="14" r="4" fill="none" stroke="#d4af37" stroke-width="1.6"/><path d="M11 12l9-9M16 7l3 3M14 9l2 2" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><polyline points="21 15 16 10 5 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="bar wrap">
+    <a class="brand" href="#home" aria-label="Heist VIP Service Marbella">
+      <svg viewBox="0 0 100 68" aria-hidden="true"><use href="#crown"/></svg>
+      <span>Heist VIP Service Marbella</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a class="nav" href="#home" data-route="home" data-i18n="nav_home">Home</a>
+      <a class="nav" href="#about" data-route="about" data-i18n="nav_about">About</a>
+      <a class="nav" href="#services" data-route="services" data-i18n="nav_services">Services</a>
+      <a class="nav" href="#contact" data-route="contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="acts">
+      <a class="btn btn-gold wa-btn" href="https://wa.me/" target="_blank" rel="noopener" data-i18n="wa_top">WhatsApp us</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="de" aria-pressed="false">DE</button>
+      </div>
+    </div>
+    <div class="brk"></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <div class="view" id="view-home">
+    <section class="orb-bg">
+      <div class="wrap hero">
+        <div>
+          <span class="tag" data-i18n="hero_eyebrow">Marbella · Costa del Sol</span>
+          <h1 data-i18n="hero_h1"><span>Your Life.</span><span>Your Property.</span><span class="gold-text">Our Service.</span></h1>
+          <p class="lead" data-i18n="hero_lead">Luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.</p>
+          <div class="actions">
+            <a class="btn btn-light" href="#contact" data-i18n="hero_cta1">Request a private consultation</a>
+            <a class="btn btn-dark" href="#services" data-i18n="hero_cta2">Explore services</a>
+          </div>
+        </div>
+        <aside class="hero-card glass reveal" aria-label="Heist VIP Service Marbella">
+          <svg class="crown" viewBox="0 0 100 68" aria-hidden="true"><use href="#crown"/></svg>
+          <h2>Heist VIP Service<br>Marbella</h2>
+          <ul>
+            <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc1">Property management</span></li>
+            <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc2">Yachts &amp; vehicles</span></li>
+            <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc3">Concierge on request</span></li>
+            <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc4">Security on request</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Image Placeholder in Home -->
+    <section class="wrap">
+      <div class="img-placeholder glass reveal">
+        <svg viewBox="0 0 24 24"><use href="#i-image"/></svg>
+        <span data-i18n="img_placeholder_text">Image Placeholder</span>
+      </div>
+    </section>
+
+    <section class="wrap section intro reveal">
+      <h2 data-i18n="intro_h">Welcome to Heist VIP Service Marbella</h2>
+      <div class="copy">
+        <p data-i18n="intro_p1">Your trusted partner for luxury property management, yacht and vehicle care, technical services, and exclusive concierge solutions on the Costa del Sol.</p>
+        <p data-i18n="intro_p2">We provide personalized services designed to make your life more comfortable, convenient, and worry-free. From managing your property to organizing exclusive experiences, we take care of every detail with professionalism, reliability, and discretion.</p>
+      </div>
+    </section>
+
+    <section class="wrap cards3">
+      <a class="card glass reveal delay-1" href="#services" style="text-decoration:none"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-house"/></svg></div><h3 data-i18n="p1_h">Your property</h3><p data-i18n="p1_t">Technical care and complete management of your home, from pool and spa to heating and air conditioning.</p></a>
+      <a class="card glass reveal delay-2" href="#services" style="text-decoration:none"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-boat"/></svg></div><h3 data-i18n="p2_h">Yachts &amp; vehicles</h3><p data-i18n="p2_t">Organisation and regular maintenance for your private yachts and your entire vehicle fleet.</p></a>
+      <a class="card glass reveal delay-3" href="#services" style="text-decoration:none"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-bell"/></svg></div><h3 data-i18n="p3_h">Concierge</h3><p data-i18n="p3_t">Yacht charters, helicopter rentals, special transport and personal butler service, organised for you.</p></a>
+    </section>
+
+    <!-- Clients Feedback Section -->
+    <section class="feedback-section reveal">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 40em; margin-inline: auto;">
+          <span class="tag" data-i18n="feedback_tag">Testimonials</span>
+          <h2 style="font-size: clamp(2rem, 2.8vw + 1rem, 3.2rem); margin-top: 16px;" data-i18n="feedback_h">Client Feedback</h2>
+          <p style="color: var(--muted); margin-top: 12px;" data-i18n="feedback_lead">What our valued clients say about our discretion, reliability, and dedicated service on the Costa del Sol.</p>
+        </div>
+        <div class="feedback-grid">
+          <div class="feedback-card glass reveal delay-1">
+            <div class="feedback-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p data-i18n="fb_1_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="feedback-author">
+              <span data-i18n="fb_1_author">Lorem ipsum</span>
+              <span data-i18n="fb_1_loc">Name</span>
+            </div>
+          </div>
+          <div class="feedback-card glass reveal delay-2">
+            <div class="feedback-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p data-i18n="fb_2_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="feedback-author">
+              <span data-i18n="fb_2_author">Lorem Ipsum</span>
+              <span data-i18n="fb_2_loc">Name</span>
+            </div>
+          </div>
+          <div class="feedback-card glass reveal delay-3">
+            <div class="feedback-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p data-i18n="fb_3_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="feedback-author">
+              <span data-i18n="fb_3_author">Lorem Ipsum</span>
+              <span data-i18n="fb_3_loc">Name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="view" id="view-about" hidden>
+    <section class="orb-bg">
+      <div class="wrap page-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="nav_home">Home</a><span>/</span><b data-i18n="nav_about">About</b></nav>
+        <h1 data-i18n="about_h1">About Heist VIP Service Marbella</h1>
+        <p class="lead" data-i18n="about_lead">A discreet partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge on the Costa del Sol, in English and German.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#contact" data-i18n="about_cta1">Talk to us</a>
+          <a class="btn btn-dark" href="#services" data-i18n="about_cta2">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section split reveal" style="padding-top:clamp(20px,3vw,40px)">
+      <div>
+        <div class="photo"><img src="//////////"></div>
+        <p class="photo-note" data-i18n="photo_note">Placeholder.</p>
+      </div>
+      <div class="text-col">
+        <span class="tag" data-i18n="about_tag">Owner-led</span>
+        <h2 data-i18n="about_h2">Your Life. Your Property. Our Service.</h2>
+        <p data-i18n="about_p1">Heist VIP Service Marbella is led by its owner, Michel Stoppe, born Von Brück. We look after homes, yachts and vehicles on the Costa del Sol. Electrical, gas, water, pool and spa, heating and air conditioning work, full property management and care for your fleet are handled by one team that keeps every detail in order, with the discretion and reliability you expect.</p>
+        <p data-i18n="about_p2">Beyond the technical side, our concierge desk arranges yacht charters, helicopter rentals, special transport and personal butler service on request, and we offer professional security tailored to you and your property. We work in English and German and shape every service around your individual wishes. You tell us what you need. We take care of making it happen.</p>
+      </div>
+    </section>
+
+    <section class="wrap chips">
+      <div class="chip glass reveal delay-1"><i><svg viewBox="0 0 16 16"><use href="#tick"/></svg></i><div><b data-i18n="ch1_h">EN / DE</b><small data-i18n="ch1_t">Bilingual service</small></div></div>
+      <div class="chip glass reveal delay-2"><i><svg viewBox="0 0 16 16"><use href="#tick"/></svg></i><div><b data-i18n="ch2_h">One team</b><small data-i18n="ch2_t">Property, yacht &amp; fleet</small></div></div>
+      <div class="chip glass reveal delay-3"><i><svg viewBox="0 0 16 16"><use href="#tick"/></svg></i><div><b data-i18n="ch3_h">On request</b><small data-i18n="ch3_t">Concierge &amp; security</small></div></div>
+      <div class="chip glass reveal delay-3"><i><svg viewBox="0 0 16 16"><use href="#tick"/></svg></i><div><b data-i18n="ch4_h">Marbella</b><small data-i18n="ch4_t">Based on the Costa del Sol</small></div></div>
+    </section>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="view" id="view-services" hidden>
+    <section class="orb-bg">
+      <div class="wrap page-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="nav_home">Home</a><span>/</span><b data-i18n="nav_services">Services</b></nav>
+        <h1 data-i18n="s_h">Services</h1>
+        <p class="lead" data-i18n="s_lead">A comprehensive range of services tailored to your individual needs.</p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="bento">
+        <article class="card glass b-tech reveal delay-1">
+          <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-house"/></svg></div>
+          <h2 data-i18n="sec1_k">Technology &amp; property</h2>
+          <p data-i18n="sec1_t">Technical expertise and complete management of your property.</p>
+          <ul>
+            <li data-i18n="sec1_l1">Electrical work</li>
+            <li data-i18n="sec1_l2">Gas and water installations</li>
+            <li data-i18n="sec1_l3">Pool and spa technology</li>
+            <li data-i18n="sec1_l4">Heating and air conditioning systems</li>
+            <li data-i18n="sec1_l5">Complete maintenance and management of your property</li>
+          </ul>
+        </article>
+        <article class="card glass b-yacht reveal delay-2">
+          <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-boat"/></svg></div>
+          <h2 data-i18n="sec2_k">Yachts &amp; vehicles</h2>
+          <p data-i18n="sec2_t">We take care of your private yachts and your entire vehicle fleet, including organisation and regular maintenance.</p>
+        </article>
+        <article class="card glass b-conc reveal delay-1">
+          <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-bell"/></svg></div>
+          <h2 data-i18n="sec3_k">Concierge</h2>
+          <p data-i18n="sec3_t">Everything organised and coordinated for you.</p>
+          <ul>
+            <li data-i18n="sec3_l1">Yacht charters</li>
+            <li data-i18n="sec3_l2">Helicopter rentals</li>
+            <li data-i18n="sec3_l3">Special transportation arrangements</li>
+            <li data-i18n="sec3_l4">Personal butler services on request</li>
+          </ul>
+        </article>
+        <article class="card glass b-sec reveal delay-2">
+          <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg></div>
+          <h2 data-i18n="sec4_k">Security</h2>
+          <p data-i18n="sec4_t">Professional security services on request, tailored to your personal requirements and your property.</p>
+        </article>
+        <article class="card glass b-clear reveal delay-3">
+          <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-key"/></svg></div>
+          <h2 data-i18n="sec5_k">Property clearance</h2>
+          <p data-i18n="sec5_t">Within the limits of the law, we assist in organising and carrying out the clearance of occupied properties, in cooperation with appropriately qualified professionals.</p>
+        </article>
+      </div>
+      <p class="note-end reveal" data-i18n="sec_end">Whatever your needs may be, we do everything we can to fulfil your wishes and find individual solutions.</p>
+    </div>
+
+    <section class="values-band reveal">
+      <div class="wrap section">
+        <h2 data-i18n="val_h">You tell us what you need. We make it happen.</h2>
+        <div class="values">
+          <div class="card glass reveal delay-1"><h3 data-i18n="v1_h">Exclusivity</h3><p data-i18n="v1_t">A personal service backed by a network of carefully selected providers.</p></div>
+          <div class="card glass reveal delay-2"><h3 data-i18n="v2_h">Reliability</h3><p data-i18n="v2_t">Technical expertise and regular maintenance, so that everything simply works.</p></div>
+          <div class="card glass reveal delay-3"><h3 data-i18n="v3_h">Discretion</h3><p data-i18n="v3_t">Personal assistance handled with professionalism and full discretion.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="view" id="view-contact" hidden>
+    <section class="orb-bg">
+      <div class="wrap page-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="nav_home">Home</a><span>/</span><b data-i18n="nav_contact">Contact</b></nav>
+        <h1 data-i18n="c_h">Contact</h1>
+        <p class="lead" data-i18n="c_lead">Tell us what you need. We will get back to you personally.</p>
+      </div>
+    </section>
+
+    <div class="wrap contact-grid">
+      <div class="form-card glass reveal">
+        <form id="contact-form" novalidate>
+          <div class="two">
+            <div class="field"><label for="f-name" data-i18n="f_name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-email" data-i18n="f_email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="f-phone" data-i18n="f_phone">Phone (optional)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field">
+              <label for="f-topic" data-i18n="f_topic">I am interested in</label>
+              <select id="f-topic" name="topic">
+                <option value="o_prop" data-i18n="o_prop">Property management</option>
+                <option value="o_tech" data-i18n="o_tech">Technical services</option>
+                <option value="o_yacht" data-i18n="o_yacht">Yachts &amp; vehicles</option>
+                <option value="o_conc" data-i18n="o_conc">Concierge</option>
+                <option value="o_sec" data-i18n="o_sec">Security</option>
+                <option value="o_other" data-i18n="o_other">Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="f-msg" data-i18n="f_msg">Your message</label><textarea id="f-msg" name="message" required></textarea></div>
+          <label class="check" for="f-consent">
+            <input id="f-consent" name="consent" type="checkbox" required>
+            <span data-i18n="f_consent">I agree that my details may be used to answer my request.</span>
+          </label>
+          <p id="form-error" role="alert" style="color:#ffb089;font-size:0.92rem" hidden></p>
+          <div><button class="btn btn-light" type="submit" data-i18n="f_send">Send request</button></div>
+        </form>
+
+        <div class="result" id="result" aria-live="polite" hidden>
+          <h2 data-i18n="res_h">Your request is ready</h2>
+          <p data-i18n="res_p">This preview page is not connected to an inbox yet, so nothing has been sent. Copy the text or send it by WhatsApp.</p>
+          <textarea id="result-text" readonly aria-label="Request text"></textarea>
+          <div class="actions" style="margin-top:0">
+            <button class="btn btn-dark" type="button" id="copy-btn" data-i18n="btn_copy">Copy text</button>
+            <a class="btn btn-gold" id="wa-send" href="https://wa.me/" target="_blank" rel="noopener" data-i18n="btn_wa_send">Send via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="aside reveal delay-1">
+        <div class="card glass">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.2A9.5 9.5 0 1 0 12 2.5z"/></svg></div>
+          <h3>WhatsApp</h3>
+          <p data-i18n="wa_p">Write to us directly.</p>
+          <div><a class="btn btn-gold" href="https://wa.me/" target="_blank" rel="noopener" data-i18n="wa_btn">Chat on WhatsApp</a></div>
+        </div>
+        <div class="card glass">
+          <h3 data-i18n="own_h">Owner</h3>
+          <p>Michel Stoppe<br><span data-i18n="own_born">born Von Brück</span></p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="wrap map-sec reveal" aria-labelledby="map-h">
+      <div class="map-info glass">
+        <span class="tag" data-i18n="map_tag">Location</span>
+        <h2 id="map-h" data-i18n="map_h">Find us in Marbella</h2>
+        <address>Heist VIP Service Marbella<br>Edif. Panorama, Planta baja, Local 2<br>Ctra. de Cádiz, km 184 E<br>29603 Marbella</address>
+        <div class="actions" style="margin-top:6px">
+          <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Edif.+Panorama+Ctra.+de+C%C3%A1diz+km+184+29603+Marbella" target="_blank" rel="noopener" data-i18n="map_open">Open in Google Maps</a>
+          <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Edif.+Panorama+Ctra.+de+C%C3%A1diz+km+184+29603+Marbella" target="_blank" rel="noopener" data-i18n="map_dir">Get directions</a>
+        </div>
+        <p class="map-note" data-i18n="map_note">Schematic map. Open Google Maps for the exact position and route.</p>
+      </div>
+
+      <a class="map-card" href="https://www.google.com/maps/search/?api=1&amp;query=Edif.+Panorama+Ctra.+de+C%C3%A1diz+km+184+29603+Marbella" target="_blank" rel="noopener" aria-label="Open the location in Google Maps">
+        <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Schematic map: Heist VIP Service Marbella on Ctra. de Cádiz, with the Mediterranean to the south">
+          <rect width="640" height="400" fill="#0c0c10"/>
+          <g fill="#121217" stroke="#18181e" stroke-width="1">
+            <rect x="20" y="18" width="70" height="52" rx="6"/><rect x="104" y="18" width="80" height="52" rx="6"/><rect x="214" y="18" width="96" height="52" rx="6"/>
+            <rect x="350" y="18" width="84" height="52" rx="6"/><rect x="470" y="18" width="70" height="52" rx="6"/><rect x="554" y="18" width="70" height="52" rx="6"/>
+            <rect x="20" y="92" width="96" height="76" rx="6"/><rect x="140" y="92" width="52" height="76" rx="6"/><rect x="214" y="92" width="96" height="76" rx="6"/>
+            <rect x="350" y="92" width="96" height="76" rx="6"/><rect x="480" y="92" width="62" height="76" rx="6"/><rect x="560" y="92" width="64" height="76" rx="6"/>
+            <rect x="20" y="236" width="66" height="14" rx="4"/><rect x="214" y="236" width="86" height="12" rx="4"/><rect x="380" y="232" width="100" height="14" rx="4"/><rect x="520" y="238" width="90" height="10" rx="4"/>
+          </g>
+          <path d="M0 270 C 80 254, 160 286, 250 268 S 420 248, 520 272 S 600 262, 640 256 V400 H0 Z" fill="#0a111a"/>
+          <path d="M0 270 C 80 254, 160 286, 250 268 S 420 248, 520 272 S 600 262, 640 256" fill="none" stroke="#1f3040" stroke-width="2"/>
+          <g fill="none" stroke="#12202c" stroke-width="1.5"><path d="M30 310 q20 -8 40 0 t40 0 t40 0"/><path d="M300 340 q20 -8 40 0 t40 0 t40 0"/><path d="M470 306 q20 -8 40 0 t40 0"/></g>
+          <g fill="none" stroke="#1a1a21" stroke-linecap="round">
+            <path d="M0 80 L640 70" stroke-width="6"/><path d="M0 176 L640 168" stroke-width="6"/>
+            <path d="M200 0 L214 212" stroke-width="7"/><path d="M330 0 L342 210" stroke-width="7"/><path d="M462 0 L452 200" stroke-width="7"/>
+            <path d="M120 210 L104 264" stroke-width="6"/><path d="M420 204 L436 262" stroke-width="6"/>
+          </g>
+          <path d="M-10 216 C 120 200, 260 228, 400 206 S 560 190, 650 200" fill="none" stroke="#2b2616" stroke-width="15" stroke-linecap="round"/>
+          <path d="M-10 216 C 120 200, 260 228, 400 206 S 560 190, 650 200" fill="none" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="7 9"/>
+          <text x="40" y="244" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" fill="#7c7767" letter-spacing="1.5">CTRA. DE CÁDIZ</text>
+          <text x="420" y="356" font-family="Cormorant Garamond, Georgia, serif" font-size="20" font-style="italic" fill="#3d5568">Mar Mediterráneo</text>
+          <text x="24" y="392" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700" fill="#5d5a4e" letter-spacing="2">MARBELLA</text>
+          <g transform="translate(345 212)">
+            <circle class="ring" r="8" fill="none" stroke="#d4af37" stroke-width="2"><animate attributeName="r" from="8" to="40" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.8" to="0" dur="2.4s" repeatCount="indefinite"/></circle>
+            <ellipse cx="0" cy="2" rx="12" ry="4" fill="#000" fill-opacity="0.5"/>
+            <path d="M0 0 C-14 -16 -22 -25 -22 -36 A22 22 0 1 1 22 -36 C22 -25 14 -16 0 0 Z" fill="url(#gg)"/>
+            <circle cy="-36" r="8" fill="#07070a"/>
+            <path d="M-5 -34 L-3.5 -41 L0 -37 L3.5 -41 L5 -34 Z" fill="#d4af37"/>
+          </g>
+        </svg>
+        <div class="map-chip"><b>Heist VIP Service Marbella</b><span data-i18n="map_open">Open in Google Maps</span></div>
+      </a>
+    </section>
+  </div>
+</main>
+
+<section class="cta-sec reveal" id="cta-band">
+  <div class="wrap">
+    <div class="cta-card">
+      <h2 data-i18n="cta_h">Your Life. Your Property. Our Service.</h2>
+      <p data-i18n="cta_p">Tell us what you need. We take care of the details, discreetly and in your language.</p>
+      <a class="btn btn-light" href="#contact" data-i18n="cta_b">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot reveal">
+      <div class="foot-brand">
+        <h3>Heist VIP Service Marbella</h3>
+        <p data-i18n="foot_p">Your trusted partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.</p>
+        <div class="foot-addr"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#pin"/></svg><span>Edif. Panorama, Planta baja, Local 2, Ctra. de Cádiz, km 184 E, 29603 Marbella</span></div>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+    <div class="foot-tags reveal"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#pin"/></svg><span>Marbella</span><span>Costa del Sol</span></div>
+  </div>
+  <p class="copy-line">© 2026 Heist VIP Service Marbella</p>
+</footer>
+
+<a class="wa" href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.2A9.5 9.5 0 1 0 12 2.5z"/>
+    <path d="M8.6 8.2c-.4.5-.5 1.3-.1 2.2 1 2.3 3 4.2 5.4 5.1.8.3 1.5.1 1.9-.4l.5-.7-2-1-.8.7c-1-.4-2-1.4-2.4-2.4l.7-.8-1-2z" fill="currentColor" stroke="none"/>
+  </svg>
+  <span data-i18n="wa_float">WhatsApp</span>
+</a>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Heist VIP Service Marbella","description":"Luxury property management, yacht and vehicle care, technical services and concierge solutions on the Costa del Sol.","address":{"@type":"PostalAddress","streetAddress":"Edif. Panorama, Planta baja, Local 2, Ctra. de Cádiz, km 184 E","postalCode":"29603","addressLocality":"Marbella","addressCountry":"ES"},"founder":{"@type":"Person","name":"Michel Stoppe"},"areaServed":"Costa del Sol"}
+</script>
+
+<script>
+(function () {
+  var T = {
+    en: {
+      title_home: 'Heist VIP Service Marbella',
+      title_about: 'About | Heist VIP Service Marbella',
+      title_services: 'Services | Heist VIP Service Marbella',
+      title_contact: 'Contact | Heist VIP Service Marbella',
+      nav_home: 'Home', nav_about: 'About', nav_services: 'Services', nav_contact: 'Contact',
+      wa_top: 'WhatsApp us',
+      hero_eyebrow: 'Marbella · Costa del Sol',
+      hero_h1: '<span>Your Life.</span><span>Your Property.</span><span class="gold-text">Our Service.</span>',
+      hero_lead: 'Luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.',
+      hero_cta1: 'Request a private consultation', hero_cta2: 'Explore services',
+      hc1: 'Property management', hc2: 'Yachts & vehicles', hc3: 'Concierge on request', hc4: 'Security on request',
+      img_placeholder_text: 'Just a Place Holder',
+      feedback_tag: 'Testimonials',
+      feedback_h: 'Client Feedback',
+      feedback_lead: 'What our valued clients say about our discretion, reliability, and dedicated service on the Costa del Sol.',
+      fb_1_text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      fb_1_author: 'Name',
+      fb_1_loc: 'Lorem Ipsum',
+      fb_2_text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      fb_2_author: 'Name',
+      fb_2_loc: 'Lorem Ipsum',
+      fb_3_text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      fb_3_author: 'Name',
+      fb_3_loc: 'Lorem Ipsum',
+      intro_h: 'Welcome to Heist VIP Service Marbella',
+      intro_p1: 'Your trusted partner for luxury property management, yacht and vehicle care, technical services, and exclusive concierge solutions on the Costa del Sol.',
+      intro_p2: 'We provide personalized services designed to make your life more comfortable, convenient, and worry-free. From managing your property to organizing exclusive experiences, we take care of every detail with professionalism, reliability, and discretion.',
+      p1_h: 'Your property', p1_t: 'Technical care and complete management of your home, from pool and spa to heating and air conditioning.',
+      p2_h: 'Yachts & vehicles', p2_t: 'Organisation and regular maintenance for your private yachts and your entire vehicle fleet.',
+      p3_h: 'Concierge', p3_t: 'Yacht charters, helicopter rentals, special transport and personal butler service, organised for you.',
+      about_h1: 'About Heist VIP Service Marbella',
+      about_lead: 'A discreet partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge on the Costa del Sol, in English and German.',
+      about_cta1: 'Talk to us', about_cta2: 'Explore services',
+      photo_note: 'Just a Place Holder',
+      about_tag: 'Owner-led',
+      about_h2: 'Your Life. Your Property. Our Service.',
+      about_p1: 'Heist VIP Service Marbella is led by its owner, Michel Stoppe, born Von Brück. We look after homes, yachts and vehicles on the Costa del Sol. Electrical, gas, water, pool and spa, heating and air conditioning work, full property management and care for your fleet are handled by one team that keeps every detail in order, with the discretion and reliability you expect.',
+      about_p2: 'Beyond the technical side, our concierge desk arranges yacht charters, helicopter rentals, special transport and personal butler service on request, and we offer professional security tailored to you and your property. We work in English and German and shape every service around your individual wishes. You tell us what you need. We take care of making it happen.',
+      ch1_h: 'EN / DE', ch1_t: 'Bilingual service',
+      ch2_h: 'One team', ch2_t: 'Property, yacht & fleet',
+      ch3_h: 'On request', ch3_t: 'Concierge & security',
+      ch4_h: 'Marbella', ch4_t: 'Based on the Costa del Sol',
+      s_h: 'Services', s_lead: 'A comprehensive range of services tailored to your individual needs.',
+      sec1_k: 'Technology & property', sec1_t: 'Technical expertise and complete management of your property.',
+      sec1_l1: 'Electrical work', sec1_l2: 'Gas and water installations', sec1_l3: 'Pool and spa technology',
+      sec1_l4: 'Heating and air conditioning systems', sec1_l5: 'Complete maintenance and management of your property',
+      sec2_k: 'Yachts & vehicles', sec2_t: 'We take care of your private yachts and your entire vehicle fleet, including organisation and regular maintenance.',
+      sec3_k: 'Concierge', sec3_t: 'Everything organised and coordinated for you.',
+      sec3_l1: 'Yacht charters', sec3_l2: 'Helicopter rentals', sec3_l3: 'Special transportation arrangements', sec3_l4: 'Personal butler services on request',
+      sec4_k: 'Security', sec4_t: 'Professional security services on request, tailored to your personal requirements and your property.',
+      sec5_k: 'Property clearance', sec5_t: 'Within the limits of the law, we assist in organising and carrying out the clearance of occupied properties, in cooperation with appropriately qualified professionals.',
+      sec_end: 'Whatever your needs may be, we do everything we can to fulfil your wishes and find individual solutions.',
+      val_h: 'You tell us what you need. We make it happen.',
+      v1_h: 'Exclusivity', v1_t: 'A personal service backed by a network of carefully selected providers.',
+      v2_h: 'Reliability', v2_t: 'Technical expertise and regular maintenance, so that everything simply works.',
+      v3_h: 'Discretion', v3_t: 'Personal assistance handled with professionalism and full discretion.',
+      c_h: 'Contact', c_lead: 'Tell us what you need. We will get back to you personally.',
+      f_name: 'Name', f_email: 'Email', f_phone: 'Phone (optional)', f_topic: 'I am interested in',
+      o_prop: 'Property management', o_tech: 'Technical services', o_yacht: 'Yachts & vehicles', o_conc: 'Concierge', o_sec: 'Security', o_other: 'Something else',
+      f_msg: 'Your message', f_consent: 'I agree that my details may be used to answer my request.', f_send: 'Send request',
+      err: 'Please fill in your name, a valid email, your message and tick the consent box.',
+      res_h: 'Your request is ready',
+      res_p: 'This preview page is not connected to an inbox yet, so nothing has been sent. Copy the text or send it by WhatsApp.',
+      btn_copy: 'Copy text', btn_copied: 'Copied', btn_wa_send: 'Send via WhatsApp',
+      wa_p: 'Write to us directly.', wa_btn: 'Chat on WhatsApp', wa_float: 'WhatsApp',
+      own_h: 'Owner', own_born: 'born Von Brück',
+      map_tag: 'Location', map_h: 'Find us in Marbella', map_open: 'Open in Google Maps', map_dir: 'Get directions',
+      map_note: 'Schematic map. Open Google Maps for the exact position and route.',
+      cta_h: 'Your Life. Your Property. Our Service.', cta_p: 'Tell us what you need. We take care of the details, discreetly and in your language.', cta_b: 'Get in touch',
+      foot_p: 'Your trusted partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.',
+      msg_topic: 'Interested in', msg_phone: 'Phone', msg_name: 'Name', msg_email: 'Email'
+    },
+    de: {
+      title_home: 'Heist VIP Service Marbella',
+      title_about: 'Über uns | Heist VIP Service Marbella',
+      title_services: 'Leistungen | Heist VIP Service Marbella',
+      title_contact: 'Kontakt | Heist VIP Service Marbella',
+      nav_home: 'Startseite', nav_about: 'Über uns', nav_services: 'Leistungen', nav_contact: 'Kontakt',
+      wa_top: 'WhatsApp',
+      hero_eyebrow: 'Marbella · Costa del Sol',
+      hero_h1: '<span>Ihr Leben.</span><span>Ihr Eigentum.</span><span class="gold-text">Unser Service.</span>',
+      hero_lead: 'Luxuriöse Immobilienbetreuung, Yacht- und Fahrzeugpflege, technische Services und exklusive Concierge-Lösungen an der Costa del Sol.',
+      hero_cta1: 'Persönliches Gespräch anfragen', hero_cta2: 'Leistungen entdecken',
+      hc1: 'Immobilienverwaltung', hc2: 'Yachten & Fahrzeuge', hc3: 'Concierge auf Anfrage', hc4: 'Sicherheit auf Anfrage',
+      img_placeholder_text: 'Just a Place Holder',
+      feedback_tag: 'Referenzen',
+      feedback_h: 'Kundenfeedback',
+      feedback_lead: 'Was unsere geschätzten Kunden über unsere Diskretion, Zuverlässigkeit und unseren engagierten Service an der Costa del Sol sagen.',
+      fb_1_text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      fb_1_author: 'Lorem Ipsum',
+      fb_1_loc: 'Name',
+      fb_2_text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      fb_2_author: 'Name',
+      fb_2_loc: 'Lorem Ipsum',
+      fb_3_text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      fb_3_author: 'Name',
+      fb_3_loc: 'Lorem Ipsum',
+      intro_h: 'Willkommen bei Heist VIP Service Marbella',
+      intro_p1: 'Ihr zuverlässiger Partner für luxuriöse Immobilienbetreuung, Yacht- und Fahrzeugpflege, technische Services und exklusive Concierge-Lösungen an der Costa del Sol.',
+      intro_p2: 'Wir bieten persönliche Dienstleistungen, die Ihr Leben komfortabler, bequemer und sorgenfreier machen. Von der Verwaltung Ihrer Immobilie bis zur Organisation exklusiver Erlebnisse kümmern wir uns mit Professionalität, Zuverlässigkeit und Diskretion um jedes Detail.',
+      p1_h: 'Ihre Immobilie', p1_t: 'Technische Betreuung und vollständige Verwaltung Ihres Hauses, von Pool und Spa bis zu Heizung und Klimaanlage.',
+      p2_h: 'Yachten & Fahrzeuge', p2_t: 'Organisation und regelmäßige Wartung für Ihre privaten Yachten und Ihren gesamten Fuhrpark.',
+      p3_h: 'Concierge', p3_t: 'Yachtcharter, Hubschraubermiete, besondere Transporte und persönlicher Butlerservice, für Sie organisiert.',
+      about_h1: 'Über Heist VIP Service Marbella',
+      about_lead: 'Ein diskreter Partner für luxuriöse Immobilienbetreuung, Yacht- und Fahrzeugpflege, technische Services und exklusiven Concierge-Service an der Costa del Sol, auf Deutsch und Englisch.',
+      about_cta1: 'Sprechen Sie mit uns', about_cta2: 'Leistungen entdecken',
+      photo_note: 'Just a Place Holder',
+      about_tag: 'Inhabergeführt',
+      about_h2: 'Ihr Leben. Ihr Eigentum. Unser Service.',
+      about_p1: 'Heist VIP Service Marbella wird von seinem Inhaber Michel Stoppe, geboren als Von Brück, geführt. Wir betreuen Häuser, Yachten und Fahrzeuge an der Costa del Sol. Elektro-, Gas-, Wasser-, Pool- und Spa-Arbeiten, Heizungs- und Klimatechnik, die komplette Immobilienverwaltung und die Pflege Ihres Fuhrparks liegen in der Hand eines Teams, das jedes Detail im Blick behält, mit der Diskretion und Zuverlässigkeit, die Sie erwarten.',
+      about_p2: 'Über die Technik hinaus organisiert unser Concierge-Service auf Anfrage Yachtcharter, Hubschraubermiete, besondere Transporte und persönlichen Butlerservice, und wir bieten professionelle Sicherheit, abgestimmt auf Sie und Ihre Immobilie. Wir arbeiten auf Deutsch und Englisch und richten jeden Service nach Ihren individuellen Wünschen aus. Sie sagen uns, was Sie brauchen. Wir setzen es um.',
+      ch1_h: 'DE / EN', ch1_t: 'Zweisprachiger Service',
+      ch2_h: 'Ein Team', ch2_t: 'Immobilie, Yacht & Fuhrpark',
+      ch3_h: 'Auf Anfrage', ch3_t: 'Concierge & Sicherheit',
+      ch4_h: 'Marbella', ch4_t: 'Ansässig an der Costa del Sol',
+      s_h: 'Leistungen', s_lead: 'Ein umfassendes Leistungsspektrum, abgestimmt auf Ihre individuellen Bedürfnisse.',
+      sec1_k: 'Technik & Immobilie', sec1_t: 'Technisches Fachwissen und vollständige Verwaltung Ihrer Immobilie.',
+      sec1_l1: 'Elektroarbeiten', sec1_l2: 'Gas- und Wasserinstallationen', sec1_l3: 'Pool- und Spa-Technik',
+      sec1_l4: 'Heizungs- und Klimaanlagen', sec1_l5: 'Vollständige Wartung und Verwaltung Ihrer Immobilie',
+      sec2_k: 'Yachten & Fahrzeuge', sec2_t: 'Wir kümmern uns um Ihre privaten Yachten und Ihren gesamten Fuhrpark, einschließlich Organisation und regelmäßiger Wartung.',
+      sec3_k: 'Concierge', sec3_t: 'Alles für Sie organisiert und koordiniert.',
+      sec3_l1: 'Yachtcharter', sec3_l2: 'Hubschraubermiete', sec3_l3: 'Besondere Transportlösungen', sec3_l4: 'Persönlicher Butlerservice auf Anfrage',
+      sec4_k: 'Sicherheit', sec4_t: 'Professionelle Sicherheitsdienste auf Anfrage, abgestimmt auf Ihre persönlichen Anforderungen und Ihre Immobilie.',
+      sec5_k: 'Räumung besetzter Immobilien', sec5_t: 'Im Rahmen der gesetzlichen Möglichkeiten unterstützen wir bei der Organisation und Durchführung der Räumung besetzter Immobilien, in Zusammenarbeit mit entsprechend qualifizierten Fachleuten.',
+      sec_end: 'Was auch immer Sie benötigen: Wir tun alles, um Ihre Wünsche zu erfüllen und individuelle Lösungen zu finden.',
+      val_h: 'Sie sagen uns, was Sie brauchen. Wir setzen es um.',
+      v1_h: 'Exklusivität', v1_t: 'Persönlicher Service, getragen von einem Netzwerk sorgfältig ausgewählter Dienstleister.',
+      v2_h: 'Zuverlässigkeit', v2_t: 'Technisches Fachwissen und regelmäßige Wartung, damit alles einfach funktioniert.',
+      v3_h: 'Diskretion', v3_t: 'Persönliche Betreuung mit Professionalität und voller Diskretion.',
+      c_h: 'Kontakt', c_lead: 'Sagen Sie uns, what Sie brauchen. Wir melden uns persönlich bei Ihnen.',
+      f_name: 'Name', f_email: 'E-Mail', f_phone: 'Telefon (optional)', f_topic: 'Ich interessiere mich für',
+      o_prop: 'Immobilienverwaltung', o_tech: 'Technische Services', o_yacht: 'Yachten & Fahrzeuge', o_conc: 'Concierge', o_sec: 'Sicherheit', o_other: 'Etwas anderes',
+      f_msg: 'Ihre Nachricht', f_consent: 'Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden.', f_send: 'Anfrage senden',
+      err: 'Bitte geben Sie Ihren Namen, eine gültige E-Mail-Adresse und Ihre Nachricht an und bestätigen Sie die Einwilligung.',
+      res_h: 'Ihre Anfrage ist vorbereitet',
+      res_p: 'Diese Vorschauseite ist noch nicht mit einem Postfach verbunden, daher wurde nichts gesendet. Kopieren Sie den Text oder senden Sie ihn per WhatsApp.',
+      btn_copy: 'Text kopieren', btn_copied: 'Kopiert', btn_wa_send: 'Per WhatsApp senden',
+      wa_p: 'Schreiben Sie uns direkt.', wa_btn: 'Auf WhatsApp chatten', wa_float: 'WhatsApp',
+      own_h: 'Inhaber', own_born: 'geboren als Von Brück',
+      map_tag: 'Standort', map_h: 'So finden Sie uns in Marbella', map_open: 'In Google Maps öffnen', map_dir: 'Route planen',
+      map_note: 'Schematische Karte. Die genaue Position und Route sehen Sie in Google Maps.',
+      cta_h: 'Ihr Leben. Ihr Eigentum. Unser Service.', cta_p: 'Sagen Sie uns, what Sie brauchen. Wir kümmern uns diskret und in Ihrer Sprache um die Details.', cta_b: 'Kontakt aufnehmen',
+      foot_p: 'Ihr zuverlässiger Partner für luxuriöse Immobilienbetreuung, Yacht- und Fahrzeugpflege, technische Services und exklusive Concierge-Lösungen an der Costa del Sol.',
+      msg_topic: 'Interesse an', msg_phone: 'Telefon', msg_name: 'Name', msg_email: 'E-Mail'
+    }
+  };
+
+  var routes = ['home', 'about', 'services', 'contact'];
+  var lang = 'en';
+  var route = 'home';
+  var navLang = (navigator.language || '').toLowerCase();
+  try {
+    var saved = localStorage.getItem('hvs-lang');
+    if (saved === 'en' || saved === 'de') lang = saved; else if (navLang.indexOf('de') === 0) lang = 'de';
+  } catch (e) { if (navLang.indexOf('de') === 0) lang = 'de'; }
+
+  function t(k) { return T[lang][k] || T.en[k] || ''; }
+
+  function applyLang() {
+    document.documentElement.lang = lang;
+    var nodes = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < nodes.length; i++) {
+      var k = nodes[i].getAttribute('data-i18n');
+      if (T[lang][k] != null) nodes[i].innerHTML = T[lang][k];
+    }
+    var btns = document.querySelectorAll('[data-lang]');
+    for (var j = 0; j < btns.length; j++) btns[j].setAttribute('aria-pressed', btns[j].getAttribute('data-lang') === lang ? 'true' : 'false');
+    document.title = t('title_' + route);
+  }
+
+  function showRoute(first) {
+    var h = (location.hash || '').replace('#', '');
+    route = routes.indexOf(h) >= 0 ? h : 'home';
+    for (var i = 0; i < routes.length; i++) document.getElementById('view-' + routes[i]).hidden = routes[i] !== route;
+    document.getElementById('cta-band').hidden = route === 'contact';
+    var links = document.querySelectorAll('[data-route]');
+    for (var j = 0; j < links.length; j++) {
+      if (links[j].getAttribute('data-route') === route) links[j].setAttribute('aria-current', 'page');
+      else links[j].removeAttribute('aria-current');
+    }
+    document.title = t('title_' + route);
+    if (!first) window.scrollTo(0, 0);
+  }
+
+  var form = document.getElementById('contact-form');
+  var errEl = document.getElementById('form-error');
+  var resEl = document.getElementById('result');
+  var resText = document.getElementById('result-text');
+  var waSend = document.getElementById('wa-send');
+  var copyBtn = document.getElementById('copy-btn');
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-lang]') : null;
+    if (!b) return;
+    lang = b.getAttribute('data-lang');
+    try { localStorage.setItem('hvs-lang', lang); } catch (err) {}
+    applyLang();
+    if (!resEl.hidden) buildResult();
+  });
+  window.addEventListener('hashchange', function () { showRoute(false); });
+
+  function buildResult() {
+    var lines = [
+      t('msg_name') + ': ' + document.getElementById('f-name').value.trim(),
+      t('msg_email') + ': ' + document.getElementById('f-email').value.trim()
+    ];
+    var ph = document.getElementById('f-phone').value.trim();
+    if (ph) lines.push(t('msg_phone') + ': ' + ph);
+    lines.push(t('msg_topic') + ': ' + t(document.getElementById('f-topic').value));
+    lines.push('');
+    lines.push(document.getElementById('f-msg').value.trim());
+    var text = lines.join('\n');
+    resText.value = text;
+    waSend.href = 'https://wa.me/?text=' + encodeURIComponent(text);
+    copyBtn.textContent = t('btn_copy');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('f-name').value.trim();
+    var email = document.getElementById('f-email').value.trim();
+    var msg = document.getElementById('f-msg').value.trim();
+    var ok = document.getElementById('f-consent').checked;
+    var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!name || !mailOk || !msg || !ok) {
+      errEl.textContent = t('err');
+      errEl.hidden = false;
+      resEl.hidden = true;
+      return;
+    }
+    errEl.hidden = true;
+    buildResult();
+    resEl.hidden = false;
+    resEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  copyBtn.addEventListener('click', function () {
+    function done() { copyBtn.textContent = t('btn_copied'); }
+    function fallback() { resText.focus(); resText.select(); try { document.execCommand('copy'); done(); } catch (err) {} }
+    try { navigator.clipboard.writeText(resText.value).then(done, fallback); } catch (err) { fallback(); }
+  });
+
+  // Intersection Observer for scroll pop-up effect (repeats on scroll up/down)
+  document.addEventListener("DOMContentLoaded", function () {
+    var observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.15
+    };
+
+    var observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, observerOptions);
+
+    var revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(function (el) {
+      observer.observe(el);
+    });
+  });
+
+  showRoute(true);
+  applyLang();
+})();
+</script>
+
+</body></html>

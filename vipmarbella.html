@@ -1,6 +1,7 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>VIP Service Marbella</title>
 <meta name="description" content="VIP Service Marbella: luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.">
+<link rel="icon" type="image/jpeg" href="icon.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap">
 <style>
 /* Layout: glass sticky header (nav left, crown centre, nav + WhatsApp + EN/DE right); asymmetric hero with a glass crown card; rounded cards and a service grid; contact page ends with a location map card. Black ground, gold only for accents. */
@@ -82,7 +83,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spa
 .bar a.nav:hover { color: var(--text); }
 .bar a.nav[aria-current="page"] { color: var(--gold-hi); background: var(--gold-bg); }
 .brand { order: 1; flex: 1 0 calc(100% - 100px); display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
-.brand svg { width: 40px; height: 27px; flex: none; }
+.brand img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex: none; border: 1px solid var(--gold-lo); }
 .brand span { font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; }
 .lang { order: 1; display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; margin-left: auto; background: rgba(255,255,255,0.03); }
 .lang button { font: 700 0.7rem/1 var(--sans); letter-spacing: 0.1em; padding: 8px 12px; background: transparent; color: var(--muted); border: 0; border-radius: 999px; cursor: pointer; }
@@ -107,7 +108,6 @@ em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spa
   .bar a.nav { order: 0; flex: none; padding: 9px 14px; font-size: 0.86rem; margin-inline: 0; }
   .brand { order: 0; flex: none; }
   .brand span { font-size: 1.05rem; }
-  .brand svg { width: 42px; height: 28px; }
   .lang { order: 0; margin-left: 0; }
   .wa-btn { display: inline-flex; padding: 12px 20px; font-size: 0.78rem; order: 0; }
 }
@@ -144,7 +144,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spa
 .hero-card { padding: 32px 28px; display: grid; gap: 22px; justify-items: start; position: relative; overflow: hidden; }
 .hero-card::before { content: ""; position: absolute; inset: -40% -30% auto auto; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(212,175,55,0.25), rgba(212,175,55,0) 70%); pointer-events: none; }
 .hero-card > * { position: relative; }
-.hero-card svg.crown { width: 92px; height: auto; }
+.hero-card img.crown { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold-lo); }
 .hero-card h2 { font-size: 1.5rem; }
 .hero-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; width: 100%; }
 .hero-card li { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.03); font-weight: 500; font-size: 0.96rem; }
@@ -374,18 +374,6 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       <stop offset="0.65" stop-color="#d4af37"/>
       <stop offset="1" stop-color="#f6e7b0"/>
     </linearGradient>
-    <symbol id="crown" viewBox="0 0 100 68">
-      <path d="M10 54 L6 22 L17 42 L28 16 L39 40 L50 8 L61 40 L72 16 L83 42 L94 22 L90 54 Z" fill="url(#gg)"/>
-      <circle cx="6" cy="19" r="3.4" fill="url(#gg)"/>
-      <circle cx="28" cy="13" r="3.4" fill="url(#gg)"/>
-      <circle cx="50" cy="5" r="3.8" fill="url(#gg)"/>
-      <circle cx="72" cy="13" r="3.4" fill="url(#gg)"/>
-      <circle cx="94" cy="19" r="3.4" fill="url(#gg)"/>
-      <rect x="10" y="57" width="80" height="8" rx="1.5" fill="url(#gg)"/>
-      <circle cx="30" cy="61" r="1.8" fill="#07070a"/>
-      <circle cx="50" cy="61" r="1.8" fill="#07070a"/>
-      <circle cx="70" cy="61" r="1.8" fill="#07070a"/>
-    </symbol>
     <symbol id="tick" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="pin" viewBox="0 0 16 16"><path d="M8 14.5s4.5-4.2 4.5-7.7a4.5 4.5 0 0 0-9 0c0 3.5 4.5 7.7 4.5 7.7z" fill="none" stroke="#a5a296" stroke-width="1.2" stroke-linejoin="round"/><circle cx="8" cy="6.8" r="1.6" fill="none" stroke="#a5a296" stroke-width="1.2"/></symbol>
     <symbol id="i-house" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round"/></symbol>
@@ -400,7 +388,7 @@ footer { border-top: 1px solid var(--line); background: #050507; }
 <header class="top">
   <div class="bar wrap">
     <a class="brand" href="#home" aria-label="VIP Service Marbella">
-      <svg viewBox="0 0 100 68" aria-hidden="true"><use href="#crown"/></svg>
+      <img src="icon.jpg" alt="VIP Service Marbella Logo">
       <span>VIP Service Marbella</span>
     </a>
     <nav class="links" aria-label="Main">
@@ -436,7 +424,7 @@ footer { border-top: 1px solid var(--line); background: #050507; }
           </div>
         </div>
         <aside class="hero-card glass reveal" aria-label="VIP Service Marbella">
-          <svg class="crown" viewBox="0 0 100 68" aria-hidden="true"><use href="#crown"/></svg>
+          <img class="crown" src="icon.jpg" alt="VIP Service Marbella Logo">
           <h2>VIP Service<br>Marbella</h2>
           <ul>
             <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc1">Property management</span></li>

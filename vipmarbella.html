@@ -656,7 +656,7 @@ footer { border-top: 1px solid var(--line); background: #050507; }
           <div><button class="btn btn-light" type="submit" data-i18n="f_send">Send request</button></div>
         </form>
 
-        <div class="result" id="result" aria-live="polite" hidden>
+        <div class="result" id="result" aria-live="polite" style="display: none;" hidden>
           <h2 data-i18n="res_h">Your request is ready</h2>
           <p data-i18n="res_p">This preview page is not connected to an inbox yet, so nothing has been sent. Copy the text or send it by WhatsApp.</p>
           <textarea id="result-text" readonly aria-label="Request text"></textarea>
@@ -1004,11 +1004,13 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       errEl.textContent = t('err');
       errEl.hidden = false;
       resEl.hidden = true;
+      resEl.style.display = 'none';
       return;
     }
     errEl.hidden = true;
     buildResult();
     resEl.hidden = false;
+    resEl.style.display = 'grid';
     resEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
 
@@ -1048,4 +1050,3 @@ footer { border-top: 1px solid var(--line); background: #050507; }
 </script>
 
 </body></html>
-```[cite: 1]

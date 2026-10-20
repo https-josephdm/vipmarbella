@@ -125,8 +125,6 @@ em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spa
 .crumbs span { color: var(--muted); }
 .page-head { position: relative; padding-block: clamp(36px, 6vw, 64px) clamp(32px, 5vw, 56px); }
 .page-head h1 { font-size: clamp(2.5rem, 4.4vw + 1rem, 4.6rem); margin-block: 24px 18px; max-width: 12em; }
-.about-hero-grid { display: grid; gap: 32px; align-items: center; }
-@media (min-width: 900px) { .about-hero-grid { grid-template-columns: 1.35fr 1fr; gap: 64px; } }
 .orb-bg { position: relative; overflow: hidden; }
 .orb-bg::before {
   content: ""; position: absolute; width: 640px; height: 640px; right: -180px; top: -300px; border-radius: 50%; pointer-events: none;
@@ -520,26 +518,12 @@ footer { border-top: 1px solid var(--line); background: #050507; }
   <div class="view" id="view-about" hidden>
     <section class="orb-bg">
       <div class="wrap page-head">
-        <div class="about-hero-grid">
-          <div>
-            <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="nav_home">Home</a><span>/</span><b data-i18n="nav_about">About</b></nav>
-            <h1 data-i18n="about_h1">About VIP Service Marbella</h1>
-            <p class="lead" data-i18n="about_lead">A discreet partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge on the Costa del Sol, in English and German.</p>
-            <div class="actions">
-              <a class="btn btn-light" href="#contact" data-i18n="about_cta1">Talk to us</a>
-              <a class="btn btn-dark" href="#services" data-i18n="about_cta2">Explore services</a>
-            </div>
-          </div>
-          <aside class="hero-card glass reveal" aria-label="VIP Service Marbella">
-            <img class="crown" src="icon.jpg" alt="VIP Service Marbella Logo">
-            <h2>VIP Service<br>Marbella</h2>
-            <ul>
-              <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc1">Property management</span></li>
-              <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc2">Yachts &amp; vehicles</span></li>
-              <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc3">Concierge on request</span></li>
-              <li><svg viewBox="0 0 16 16"><use href="#tick"/></svg><span data-i18n="hc4">Security on request</span></li>
-            </ul>
-          </aside>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="nav_home">Home</a><span>/</span><b data-i18n="nav_about">About</b></nav>
+        <h1 data-i18n="about_h1">About VIP Service Marbella</h1>
+        <p class="lead" data-i18n="about_lead">A discreet partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge on the Costa del Sol, in English and German.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#contact" data-i18n="about_cta1">Talk to us</a>
+          <a class="btn btn-dark" href="#services" data-i18n="about_cta2">Explore services</a>
         </div>
       </div>
     </section>

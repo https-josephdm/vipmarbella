@@ -152,31 +152,77 @@ em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spa
 .hero-card li svg { width: 18px; height: 18px; flex: none; }
 @media (min-width: 940px) { .hero { grid-template-columns: 1.35fr 1fr; gap: 64px; } }
 
-/* image placeholder styles */
-.img-placeholder {
+/* Main full-width slideshow styles */
+.hero-slideshow {
   width: 100%;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.03);
-  border: 1px dashed var(--gold-lo);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: var(--muted);
-  text-align: center;
-  padding: 32px 16px;
+  height: clamp(260px, 35vw, 450px);
+  border-radius: var(--r);
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  border: 1px solid var(--gold-lo);
   margin-block: 20px;
 }
-.img-placeholder svg {
-  width: 40px;
-  height: 40px;
+.hero-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
 }
-.img-placeholder span {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.hero-slideshow img.active-slide {
+  opacity: 1;
+}
+
+/* Card image slideshow styles */
+.card-slideshow {
+  width: 100%;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 12px;
+  background: #000;
+  border: 1px solid var(--line);
+}
+.card-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.card-slideshow img.active-slide {
+  opacity: 1;
+}
+
+/* About page photo slideshow styles */
+.photo-slideshow {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+.photo-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.photo-slideshow img.active-slide {
+  opacity: 1;
 }
 
 /* clients feedback styles */
@@ -437,11 +483,15 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       </div>
     </section>
 
-    <!-- Image Placeholder in Home -->
+    <!-- Hero Image Slider -->
     <section class="wrap">
-      <div class="img-placeholder glass reveal">
-        <svg viewBox="0 0 24 24"><use href="#i-image"/></svg>
-        <span data-i18n="img_placeholder_text">Image Placeholder</span>
+      <div class="hero-slideshow reveal" data-slideshow>
+        <img src="yacht9.jpeg" alt="Yacht 9" class="active-slide" onerror="this.onerror=null; this.src='yacht9.jpg';">
+        <img src="view1.jpeg" alt="View 1" onerror="this.onerror=null; this.src='view1.jpg';">
+        <img src="car6.jpeg" alt="Car 6" onerror="this.onerror=null; this.src='car6.jpg';">
+        <img src="cleaner1.jpeg" alt="Cleaner 1" onerror="this.onerror=null; this.src='cleaner1.jpg';">
+        <img src="security2.jpeg" alt="Security 2" onerror="this.onerror=null; this.src='security2.jpg';">
+        <img src="car7.jpeg" alt="Car 7" onerror="this.onerror=null; this.src='car7.jpg';">
       </div>
     </section>
 
@@ -453,10 +503,43 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       </div>
     </section>
 
+    <!-- 3 Cards with Image Sliders -->
     <section class="wrap cards3">
-      <a class="card glass reveal delay-1" href="#services" style="text-decoration:none"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-house"/></svg></div><h3 data-i18n="p1_h">Your property</h3><p data-i18n="p1_t">Technical care and complete management of your home, from pool and spa to heating and air conditioning.</p></a>
-      <a class="card glass reveal delay-2" href="#services" style="text-decoration:none"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-boat"/></svg></div><h3 data-i18n="p2_h">Yachts &amp; vehicles</h3><p data-i18n="p2_t">Organisation and regular maintenance for your private yachts and your entire vehicle fleet.</p></a>
-      <a class="card glass reveal delay-3" href="#services" style="text-decoration:none"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-bell"/></svg></div><h3 data-i18n="p3_h">Concierge</h3><p data-i18n="p3_t">Yacht charters, helicopter rentals, special transport and personal butler service, organised for you.</p></a>
+      <a class="card glass reveal delay-1" href="#services" style="text-decoration:none">
+        <div class="card-slideshow" data-slideshow>
+          <img src="house3.jpeg" alt="House 3" class="active-slide" onerror="this.onerror=null; this.src='house3.jpg';">
+          <img src="house1.jpeg" alt="House 1" onerror="this.onerror=null; this.src='house1.jpg';">
+          <img src="house2.jpeg" alt="House 2" onerror="this.onerror=null; this.src='house2.jpg';">
+          <img src="cleaner4.jpeg" alt="Cleaner 4" onerror="this.onerror=null; this.src='cleaner4.jpg';">
+        </div>
+        <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-house"/></svg></div>
+        <h3 data-i18n="p1_h">Your property</h3>
+        <p data-i18n="p1_t">Technical care and complete management of your home, from pool and spa to heating and air conditioning.</p>
+      </a>
+
+      <a class="card glass reveal delay-2" href="#services" style="text-decoration:none">
+        <div class="card-slideshow" data-slideshow>
+          <img src="car8.jpeg" alt="Car 8" class="active-slide" onerror="this.onerror=null; this.src='car8.jpg';">
+          <img src="yacht6.jpeg" alt="Yacht 6" onerror="this.onerror=null; this.src='yacht6.jpg';">
+          <img src="car5.jpeg" alt="Car 5" onerror="this.onerror=null; this.src='car5.jpg';">
+          <img src="yacht5.jpeg" alt="Yacht 5" onerror="this.onerror=null; this.src='yacht5.jpg';">
+        </div>
+        <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-boat"/></svg></div>
+        <h3 data-i18n="p2_h">Yachts &amp; vehicles</h3>
+        <p data-i18n="p2_t">Organisation and regular maintenance for your private yachts and your entire vehicle fleet.</p>
+      </a>
+
+      <a class="card glass reveal delay-3" href="#services" style="text-decoration:none">
+        <div class="card-slideshow" data-slideshow>
+          <img src="security1.jpeg" alt="Security 1" class="active-slide" onerror="this.onerror=null; this.src='security1.jpg';">
+          <img src="security2.jpeg" alt="Security 2" onerror="this.onerror=null; this.src='security2.jpg';">
+          <img src="car2.jpeg" alt="Car 2" onerror="this.onerror=null; this.src='car2.jpg';">
+          <img src="yacht1.jpeg" alt="Yacht 1" onerror="this.onerror=null; this.src='yacht1.jpg';">
+        </div>
+        <div class="ico"><svg viewBox="0 0 24 24"><use href="#i-bell"/></svg></div>
+        <h3 data-i18n="p3_h">Concierge</h3>
+        <p data-i18n="p3_t">Yacht charters, helicopter rentals, special transport and personal butler service, organised for you.</p>
+      </a>
     </section>
 
     <!-- Clients Feedback Section -->
@@ -531,8 +614,20 @@ footer { border-top: 1px solid var(--line); background: #050507; }
 
     <section class="wrap section split reveal" style="padding-top:clamp(20px,3vw,40px)">
       <div>
-        <div class="photo"><img src="//////////"></div>
-        <p class="photo-note" data-i18n="photo_note">Placeholder.</p>
+        <div class="photo">
+          <!-- About Section Image Slideshow with automatic fallbacks -->
+          <div class="photo-slideshow" data-slideshow>
+            <img src="house3.jpeg" alt="House 3" class="active-slide" onerror="this.onerror=null; this.src='house3.jpg';">
+            <img src="cleaner4.jpeg" alt="Cleaner 4" onerror="this.onerror=null; this.src='cleaner4.jpg';">
+            <img src="yacht7.jpeg" alt="Yacht 7" onerror="this.onerror=null; this.src='yacht7.jpg';">
+            <img src="house1.jpeg" alt="House 1" onerror="this.onerror=null; this.src='house1.jpg';">
+            <img src="cleaner2.jpeg" alt="Cleaner 2" onerror="this.onerror=null; this.src='cleaner2.jpg';">
+            <img src="car9.jpeg" alt="Car 9" onerror="this.onerror=null; this.src='car9.jpg';">
+            <img src="yacht8.jpeg" alt="Yacht 8" onerror="this.onerror=null; this.src='yacht8.jpg';">
+            <img src="car2.jpeg" alt="Car 2" onerror="this.onerror=null; this.src='car2.jpg';">
+          </div>
+        </div>
+        <p class="photo-note" data-i18n="photo_note">VIP Service Marbella</p>
       </div>
       <div class="text-col">
         <span class="tag" data-i18n="about_tag">Owner-led</span>
@@ -787,7 +882,6 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       hero_lead: 'Luxury property management, yacht and vehicle care, technical services and exclusive concierge solutions on the Costa del Sol.',
       hero_cta1: 'Request a private consultation', hero_cta2: 'Explore services',
       hc1: 'Property management', hc2: 'Yachts & vehicles', hc3: 'Concierge on request', hc4: 'Security on request',
-      img_placeholder_text: 'Just a Place Holder',
       feedback_tag: 'Testimonials',
       feedback_h: 'Client Feedback',
       feedback_lead: 'What our valued clients say about our discretion, reliability, and dedicated service on the Costa del Sol.',
@@ -809,7 +903,6 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       about_h1: 'About VIP Service Marbella',
       about_lead: 'A discreet partner for luxury property management, yacht and vehicle care, technical services and exclusive concierge on the Costa del Sol, in English and German.',
       about_cta1: 'Talk to us', about_cta2: 'Explore services',
-      photo_note: 'Just a Place Holder',
       about_tag: 'Owner-led',
       about_h2: 'Your Life. Your Property. Our Service.',
       about_p1: 'VIP Service Marbella is led by its owner, Michel Stoppe, born Von Brück. We look after homes, yachts and vehicles on the Costa del Sol. Electrical, gas, water, pool and spa, heating and air conditioning work, full property management and care for your fleet are handled by one team that keeps every detail in order, with the discretion and reliability you expect.',
@@ -837,8 +930,8 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       o_prop: 'Property management', o_tech: 'Technical services', o_yacht: 'Yachts & vehicles', o_conc: 'Concierge', o_sec: 'Security', o_other: 'Something else',
       f_msg: 'Your message', f_consent: 'I agree that my details may be used to answer my request.', f_send: 'Send request',
       err: 'Please fill in your name, a valid email, your message and tick the consent box.',
-      res_h: 'Your request is ready',
-      res_p: 'This preview page is not connected to an inbox yet, so nothing has been sent. Copy the text or send it by WhatsApp.',
+      res_h: 'Your message is ready',
+      res_p: 'Your message has been formatted. Click below to send it via WhatsApp or copy the text.',
       btn_copy: 'Copy text', btn_copied: 'Copied', btn_wa_send: 'Send via WhatsApp',
       wa_p: 'Write to us directly.', wa_btn: 'Chat on WhatsApp', wa_float: 'WhatsApp',
       own_h: 'Owner', own_born: 'born Von Brück',
@@ -860,7 +953,6 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       hero_lead: 'Luxuriöse Immobilienbetreuung, Yacht- und Fahrzeugpflege, technische Services und exklusive Concierge-Lösungen an der Costa del Sol.',
       hero_cta1: 'Persönliches Gespräch anfragen', hero_cta2: 'Leistungen entdecken',
       hc1: 'Immobilienverwaltung', hc2: 'Yachten & Fahrzeuge', hc3: 'Concierge auf Anfrage', hc4: 'Sicherheit auf Anfrage',
-      img_placeholder_text: 'Just a Place Holder',
       feedback_tag: 'Referenzen',
       feedback_h: 'Kundenfeedback',
       feedback_lead: 'Was unsere geschätzten Kunden über unsere Diskretion, Zuverlässigkeit und unseren engagierten Service an der Costa del Sol sagen.',
@@ -882,7 +974,6 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       about_h1: 'Über VIP Service Marbella',
       about_lead: 'Ein diskreter Partner für luxuriöse Immobilienbetreuung, Yacht- und Fahrzeugpflege, technische Services und exklusiven Concierge-Service an der Costa del Sol, auf Deutsch und Englisch.',
       about_cta1: 'Sprechen Sie mit uns', about_cta2: 'Leistungen entdecken',
-      photo_note: 'Just a Place Holder',
       about_tag: 'Inhabergeführt',
       about_h2: 'Ihr Leben. Ihr Eigentum. Unser Service.',
       about_p1: 'VIP Service Marbella wird von seinem Inhaber Michel Stoppe, geboren als Von Brück, geführt. Wir betreuen Häuser, Yachten und Fahrzeuge an der Costa del Sol. Elektro-, Gas-, Wasser-, Pool- und Spa-Arbeiten, Heizungs- und Klimatechnik, die komplette Immobilienverwaltung und die Pflege Ihres Fuhrparks liegen in der Hand eines Teams, das jedes Detail im Blick behält, mit der Diskretion und Zuverlässigkeit, die Sie erwarten.',
@@ -902,7 +993,7 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       sec5_k: 'Räumung besetzter Immobilien', sec5_t: 'Im Rahmen der gesetzlichen Möglichkeiten unterstützen wir bei der Organisation und Durchführung der Räumung besetzter Immobilien, in Zusammenarbeit mit entsprechend qualifizierten Fachleuten.',
       sec_end: 'Was auch immer Sie benötigen: Wir tun alles, um Ihre Wünsche zu erfüllen und individuelle Lösungen zu finden.',
       val_h: 'Sie sagen uns, was Sie brauchen. Wir setzen es um.',
-      v1_h: 'Exklusivität', v1_t: 'Persönlicher Service, getragen von einem Netzwerk sorgfältig ausgewählter Dienstleister.',
+      v1_h: 'Exclusivität', v1_t: 'Persönlicher Service, getragen von einem Netzwerk sorgfältig ausgewählter Dienstleister.',
       v2_h: 'Zuverlässigkeit', v2_t: 'Technisches Fachwissen und regelmäßige Wartung, damit alles einfach funktioniert.',
       v3_h: 'Diskretion', v3_t: 'Persönliche Betreuung mit Professionalität und voller Diskretion.',
       c_h: 'Kontakt', c_lead: 'Sagen Sie uns, what Sie brauchen. Wir melden uns persönlich bei Ihnen.',
@@ -910,8 +1001,8 @@ footer { border-top: 1px solid var(--line); background: #050507; }
       o_prop: 'Immobilienverwaltung', o_tech: 'Technische Services', o_yacht: 'Yachten & Fahrzeuge', o_conc: 'Concierge', o_sec: 'Sicherheit', o_other: 'Etwas anderes',
       f_msg: 'Ihre Nachricht', f_consent: 'Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden.', f_send: 'Anfrage senden',
       err: 'Bitte geben Sie Ihren Namen, eine gültige E-Mail-Adresse und Ihre Nachricht an und bestätigen Sie die Einwilligung.',
-      res_h: 'Ihre Anfrage ist vorbereitet',
-      res_p: 'Diese Vorschauseite ist noch nicht mit einem Postfach verbunden, daher wurde nichts gesendet. Kopieren Sie den Text oder senden Sie ihn per WhatsApp.',
+      res_h: 'Ihre Nachricht ist bereit',
+      res_p: 'Ihre Nachricht wurde formatiert. Klicken Sie unten, um sie über WhatsApp zu senden, oder kopieren Sie den Text.',
       btn_copy: 'Text kopieren', btn_copied: 'Kopiert', btn_wa_send: 'Per WhatsApp senden',
       wa_p: 'Schreiben Sie uns direkt.', wa_btn: 'Auf WhatsApp chatten', wa_float: 'WhatsApp',
       own_h: 'Inhaber', own_born: 'geboren als Von Brück',
@@ -1041,6 +1132,20 @@ footer { border-top: 1px solid var(--line); background: #050507; }
     var revealElements = document.querySelectorAll('.reveal');
     revealElements.forEach(function (el) {
       observer.observe(el);
+    });
+
+    // Image Sliders Setup (switching images automatically)
+    var slideshows = document.querySelectorAll('[data-slideshow]');
+    slideshows.forEach(function (container) {
+      var imgs = container.querySelectorAll('img');
+      if (imgs.length > 1) {
+        var currentIndex = 0;
+        setInterval(function () {
+          imgs[currentIndex].classList.remove('active-slide');
+          currentIndex = (currentIndex + 1) % imgs.length;
+          imgs[currentIndex].classList.add('active-slide');
+        }, 4000);
+      }
     });
   });
 
